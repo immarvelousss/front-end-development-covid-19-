@@ -1,0 +1,444 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap;500&display=swap");
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap;500&display=swap");
+
+h1 {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*--------TITLE--------------*/
+.title h1 {
+    color: #527c88;
+    font-size: 5vw;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #527c88;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+.findOut {
+    color: #10217d;
+    font-weight: bold;
+    font-style: italic;
+}
+/*--------SLIDE SHOW---------*/
+.containterSlideshow {
+    background-color: #527c88;
+    padding: 10px 10px 10px 10px;
+}
+
+    .containterSlideshow p {
+        color: white;
+    }
+
+.slideTitle {
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow_images {
+    display: block;
+    margin: 0 auto;
+}
+
+.slideshowDots {
+    text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "previous button" to the right */
+.prev {
+    left: 100px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 100px;
+    border-radius: 3px 0 0 3px;
+}
+
+    .prev:hover, .next:hover {
+        background-color: #d7baad;
+    }
+
+/* Caption text */
+.text {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #d7baad;
+    }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+/*---------TIMELINE----------*/
+.timlineTitle {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+    .timeline ul {
+        list-style: none;
+    }
+
+        .timeline ul li:last-child {
+            margin-bottom: 0;
+        }
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap;500&display=swap");
+
+.timeline-content h1 {
+    font-family: 'Hind Guntur', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 125px 0;
+}
+
+.timeline-content p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    padding: 10px 5px 5px 10px;
+}
+
+.timeline-content .date {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #527c88;
+    vertical-align: middle
+}
+
+@media only screen and (min-width: 750px) {
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: dimgrey;
+    }
+
+    .timeline ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+        .timeline ul li:nth-child(odd) {
+            float: left;
+            clear: right;
+            transform: translateX(-30px);
+            border-radius: 20px 0px 20px 20px;
+        }
+
+        .timeline ul li:nth-child(even) {
+            float: right;
+            clear: left;
+            transform: translateX(30px);
+            border-radius: 0px 20px 20px 20px;
+        }
+
+        .timeline ul li::before {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: dimgray;
+            top: 0px;
+        }
+
+        .timeline ul li:nth-child(odd)::before {
+            transform: translate(50%, -50%);
+            right: -30px;
+        }
+
+        .timeline ul li:nth-child(even)::before {
+            transform: translate(-50%, -50%);
+            left: -30px;
+        }
+
+    .timeline-content .date {
+        position: absolute;
+        top: -30px;
+    }
+}
+
+/*FLIP CARD OF TIMELINE*/
+.flip-card {
+    width: 420px;
+    height: 350px;
+    perspective: 1000px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #2e4450;
+    color: white;
+    border-radius: 20px;
+}
+
+.flip-card-back {
+    background-color: #2e4450;
+    color: white;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+}
+
+/*-----------TABLES----------*/
+.tableTitle {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 900px;
+    margin: auto;
+}
+
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+tr, th, td {
+    border: thin solid #d7baad;
+    padding: 10px;
+    width: 100px;
+}
+
+    tr:not(:first-child) {
+        height: 40px;
+    }
+
+th {
+    font-family: 'Hind Guntur', sans-serif;
+    background-color: #16c2d5;
+}
+
+.tableLink a {
+    font-size: 20px;
+}
+
+    .tableLink a:hover {
+        color: #16c2d5;
+    }
+
+/*-------MINI GAME---------*/
+form {
+    border: 5px solid #527c88;
+    background-color: azure;
+    text-align: center;
+}
+
+.gameTitle {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+input[type="radio"] {
+    margin: 0 2px 0 10px;
+}
+
+#results {
+    font-weight: bold;
+    font-size: 20px;
+    color: #10217d;
+    background-color: #d7baad;
+}
+
+/*-------CARDS---------*/
+* {
+    box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #d7baad;
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+}
+
+    .card img {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Vaccine Type Test Form</title>
+    <meta name="author" content="Ang Jeyvian" />
+    <meta name="description" content="FED Assignment" />
+    <link rel="stylesheet" href="css/vaccinationForm-styles.css" />
+    <script src="js/vaccinationForm.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <!-- Reference to Bootstrap libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- To Do: Reference to the JavaScript library for including a HTML page -->
+    <script src="https://www.w3schools.com/lib/w2.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Bootstrap Grid 1st row - Header -->
+        <div class="row">
+            <!-- Bootstrap Grid column, full width -->
+            <div class="col-sm-12">
+                <!-- To Do: Include the header section -->
+                <div w3-include-html="header.html"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <a href="vaccination.html" class="previous" style="font-family: 'Red Hat Display', sans-serif; color: #2e4450;">&laquo; Previous</a>
+        <hr />
+    </div>
+    <br />
+    <form onsubmit="onSubmit(); return false" style="font-family: 'Quicksand', sans-serif; color: #527c88;">
+        <h1 class="formHeading" style="font-family: 'Red Hat Display', sans-serif; color: #2e4450;">Recommended Vaccine Test</h1>
+        <p>
+            <label class="labelAlign" for="age">Enter your age: </label>
+            <input id="age" name="age" type="number" max="100" min="0" placeholder="Enter your age" style="width:250px;" />
+        </p>
+        <p>
+            <label class="labelAlign" for="vul">Are you: </label>
+            <input type="radio" name="vul" value="vul" id="vul" />Medically Vulnerable / At high risk of severe disease    
+        </p>
+        <p>
+            <input type="submit" style="font-family: 'Quicksand', sans-serif; color: #2e4450;" />
+            <input type="reset" onclick="onReset()" style="font-family: 'Quicksand', sans-serif; color: #2e4450;" />
+        </p>
+        <br />
+        <br />
+        <p id="outputText"></p>
+        <p id="outputVal"></p>
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Bootstrap Grid 3rd row - Footer -->
+    <div class="row">
+        <!-- Bootstrap Grid column, full width -->
+        <div class="col-sm-12">
+            <!-- To Do: Include the footer section -->
+            <div w3-include-html="footer.html"></div>
+        </div>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

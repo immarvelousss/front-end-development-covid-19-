@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="berith" />
+    <meta name="description" content="FED Assignment" />
+    <title>Precautions</title>
+
+    <!--Main CSS for Webpage-->
+    <link rel="stylesheet" href="css/precaution.css" />
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- CSS that supports Stint Ultra Expanded Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!--CSS and JS for slideshow-->
+    <link rel="stylesheet" href="css/precaution-slideshow.css" />
+    <script src="js/precaution-slideshow.js"></script>
+    <script src="js/precaution-script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- 1st row - Header -->
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- To Do: Include the header section -->
+                <div w3-include-html="header.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <h1>What can YOU do to protect yourself from COVID-19?</h1>
+    <div id="personalhygiene" class="personalhygiene">
+        <h2 id="personalhygiene">Personal Hygiene</h2>
+        <h3>Here are some things YOU can do to maintain overall personal hygiene:</h3>
+        <div class="phbody">
+            <p></p>
+            <li>Avoid touching your face with your hands</li>
+            <li>Wash your hands frequently</li>
+            <p>Viral and Bacterial infections are often transmitted either through hand contact or commonly touched surfaces</p>
+            <p>Follow these simple steps to properly wash your hands:</p>
+            <figure>
+                <img src="images/washing_hands.png" alt="Washing Hands Steps" class="step1-img" />
+            </figure>
+
+
+        </div>
+    </div>
+
+    <div id="healthchanges" class="healthchanges">
+        <h2 id="healthchanges">Monitor Changes in your Health</h2>
+        <h3 class="hcbody">Pay close attention to your health. See the doctor immediately if your experience any of the following symptoms below.</h3>
+        <p></p>
+        <h3 style="text-align:center" class="hcslideshow">Symptoms</h3>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/fever.png" class="mySidesImages"  style="width:100%" >
+                <div class="caption-container">Fever</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/cough.png" class="mySidesImages"  style="width:100%">
+                <div class="caption-container">Cough</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/runny_nose.jpg" class="mySidesImages" style="width:100%">
+                <div class="caption-container">Runny Nose</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/sore_throat.png" class="mySidesImages" style="width:100%">
+                <div class="caption-container">Sore Throat</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/difficulty_breathing.jpg" class="mySidesImages"  style="width:100%">
+                <div class="caption-container">Difficulty Breathing</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/loss_smell.jpg" class="mySidesImages"  style="width:100%">
+                <div class="caption-container">Loss of Smell</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/fever.png" style="width:50%" onclick="currentSlide(1)" alt="Fever">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/cough.png" style="width:50%" onclick="currentSlide(2)" alt="Cough">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/runny_nose.jpg" style="width:50%" onclick="currentSlide(3)" alt="Runny Nose">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/sore_throat.png" style="width:50%" onclick="currentSlide(4)" alt="Sore Throat">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/difficulty_breathing.jpg" style="width:50%" onclick="currentSlide(5)" alt="Difficulty Breathing">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/loss_smell.jpg" style="width:50%" onclick="currentSlide(6)" alt="Loss of Smell">
+                </div>
+                <div class="hcsymptoms">
+                    <p>
+                        Even if your symptoms are mild, see a doctor.
+                        Early detection means getting treater sooner and protecting your loved ones from a possible infection.
+                    </p>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div id="traveladvisory" class="traveladvisory" onload="calculatepercentage()">
+        <h2 id="traveladvisory">Travel Advisory</h2>
+        <h3>Given the unpredicatable situations globally. Here are some countries you should avoid travelling to:</h3>
+        <p class="tabody">These countries are based on the latest updated COVID-19 situations worldwide.</p>
+        <ul id="countries" class="countries">
+            <li>Argentina</li>
+            <li>Brazil</li>
+            <li>China</li>
+            <li>Coasta Rica</li>
+            <li>Ecuador</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>India</li>
+            <li>South Korea</li>
+            <li>Russia</li>
+            <li>Taiwan</li>
+            <li>United States of America</li>
+
+        </ul>
+        <p></p>
+        <u1 class="travelling">When travelling overseas:</u1>
+        <p></p>
+        <ul class="travellingbody">
+            <li>Wash your hands frequently with soap</li>
+            <li>Wear a mask in public places</li>
+            <li>Cover your mouth with a piece of tissue when coughing or sneezing</li>
+            <li>See a doctor if you feel unwell</li>
+        </ul>
+        <p></p>
+        <u3 class="travellingend">Upon returning to Singapore, monitor your health closely for 2 weeks and see a doctor is unwell.</u3>
+        <p></p>
+        <form id="highriskform" onsubmit="calculatepercentage()" class="form">
+            <h1>Check if you're at high risk for COVID-19</h1>
+            <label class="form">Continent Visited:</label>
+            <select id="Continent" name="Continent" required onchange="calculatepercentage()" class="form">
+                <option name="continent" value="">Select Continent</option>
+                <option name="continent" value="africa">Africa</option>
+                <option name="continent" value="antartica">Antartica</option>
+                <option name="continent" value="asia">Asia</option>
+                <option name="continent" value="europe">Europe</option>
+                <option name="continent" value="northAmerica">North America</option>
+                <option name="continent" value="oceania">Oceania</option>
+                <option name="continent" value="southAmerica">South America</option>
+            </select>
+
+            <p></p>
+            <label>Date Visited:</label>
+            <input type="date" />
+            <p></p>
+
+            <fieldset id="Symptoms" name="Symptoms">
+                <legend>Are you experiencing any flu-like symptoms?</legend>
+                <input type="radio" name="symptoms" id="flusymptoms" value="yes" onclick="calculatepercentage()" />Yes
+                <p></p>
+                <input type="radio" name="symptoms" id="flusymptoms" value="no" onclick="calculatepercentage()" />No
+            </fieldset>
+            <p></p>
+
+            <fieldset id="Contact" name="Contact">
+                <legend>Have you been in contact with an infected person in the last 1 week?</legend>
+                <input type="radio" name="contact" value="yes" onclick="calculatepercentage()" />Yes
+                <p></p>
+                <input type="radio" name="contact" value="no" onclick="calculatepercentage()" />No
+            </fieldset>
+            <p></p>
+            <button type="submit" onclick="calculatepercentage()"> Submit</button>
+            <input type="reset" value="Reset" />
+            <p id="output" class="output"></p>
+        </form>
+    </div>
+
+    <div id="otherprecautions" class="otherprecautions">
+        <h2>Other Precautions to Take</h2>
+        <u1>We should continue to remain vigilant and play our part as reponsible Singaporeans to lower the number of cases in Singapore</u1>
+        <u2>
+            <li>Wear a mask at all times unless doing strenous exercise</li>
+            <li>Observe a social distance of at least 1m</li>
+            <li>Limit social gatherings. Meet online where possible</li>
+            <li>
+                Avoid crowded areas by checking
+                <a class="crowdchecking" href="https://www.spaceout.gov.sg/" target="_blank">spaceout.gov.sg</a>
+            </li>
+            <li>
+                Stay up-to-date on the latest news about the COVID-19 situation at
+                <a class="up-to-datenews" href="https://www.gov.sg/features/covid-19" target="_blank">www.gov.sg/features/covid-19</a>
+            </li>
+        </u2>
+    </div>
+
+    <div id="maskstype" class="maskstype">
+        <h2>Types of Masks Available</h2>
+        <h3>Here are some masks you can use when in public:</h3>
+        <table border="1px" style="border-collapse:collapse">
+            <br>
+            <tr>
+                <th scope="col" , colspan="1">Cloth</th>
+                <th scope="col" , colspan="1">Surgical</th>
+                <th scope="col" , colspan="1">Respirator</th>
+            </tr>
+            <tr>
+                <td scope="col" , rowspan="1">Non-medical mask, made of fabric or other materials</td>
+                <td scope="col" , rowspan="1">Also known as medical mask</td>
+                <td scope="col" , rowspan="1">Filtering facepience (FFP) or N95 masks</td>
+            </tr>
+            <tr>
+                <td scope="col">
+                    <figure>
+                        <img src="images/cloth_mask.png" alt="Cloth Mask" />
+                    </figure>
+                </td>
+                <td scope="col">
+                    <figure>
+                        <img src="images/surgical_mask.png" alt="Surgical Mask" />
+                    </figure>
+                </td>
+                <td scope="col">
+                    <figure>
+                        <img src="images/n95_mask.png" alt="N95 Mask" />
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td scope="col">
+                    Protect others from the wearer's respiratory emissions and offers wearer some protection
+                </td>
+                <td scope="col">
+                    Protect others from the wearer's respiratory emissions and offers wearer some protection
+                </td>
+                <td scope="col">
+                    Protect others from the wearer's respiratory emissions and reduces wearer's exposure to particles
+                </td>
+            </tr>
+            <tr>
+                <td scope="col">
+                    Can be washable and rewearable
+                </td>
+                <td scope="col">
+                    Single-use
+                </td>
+                <td scope="col">
+                    Single-use
+                </td>
+            </tr>
+            <tr>
+                <td scope="col">
+                    Made from a variety of woven and nonwoven fabrics, such as cotton and synthetic blends
+                </td>
+                <td scope="col">
+                    Made of three layers of synthetic nonwoven materials with filtration layers sandwiched in the middle
+                </td>
+                <td scope="col">
+                    Uses an electrostatic filter to capture particles, including viruses. Some N95-masks have valves
+                </td>
+            </tr>
+            <tr>
+                <td scope="col">
+                    Efficacy: 26%-80% depending on factors such as fabric type and number of layers
+                </td>
+                <td scope="col">
+                    Generally offers more protection than cloth masks, but less than a tightly fitted respirator
+                </td>
+                <td scope="col">
+                    Efficacy: N95 is 95% effective at blocking small and larger particles
+                </td>
+            </tr>
+            <tr>
+                <td scope="col"> </td>
+                <td scope="col"></td>
+                <td scope="col" class="maskstypecloth">
+                    WHO recommends considering preserving them for healthcare workers taking part in high-risk, aerosol-generating procedures
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- To Do: Include the footer section -->
+            <div w3-include-html="footer.html"></div>
+        </div>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
+
+</body>
+</html>

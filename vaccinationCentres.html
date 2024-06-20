@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- To Do: Set Title -->
+    <title>Vaccination Centres in Singapore</title>
+	<meta name="author" content="Xu Jiawei" />
+    <meta name="description" content="Assignment" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- To Do: Bootstrap minified CSS, refer to week 4 if forgotten to add -->
+    <link rel="stylesheet" href="css/vaccinationCentresBootstrap.min.css">
+    <!-- To Do: jQuery library, refer to week 4 if forgotten to add -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- To Do: Bootstrap JavaScript, refer to week 4 if forgotten to add -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- To Do: Site specific Cascading Stylesheet -->
+    <link rel="stylesheet" href="css/vaccinationCentres.css">
+    <!-- To Do: Reference to the JavaScript library for including a HTML page, refer to week 5 if forgotten to add W3.IncludeHTML -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!-- To Do: Include the header section -->
+        <div class="container-fluid">
+            <!-- Bootstrap Grid 1st row - Header -->
+            <div class="row">
+                <!-- Bootstrap Grid column, full width -->
+                <div class="col-sm-12">
+                    <!-- To Do: Include the header section -->
+                    <div w3-include-html="header.html"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Vaccinations Centres</h1>
+    <h3>All the information you need to get your COVID-19 vaccination shot today!</h3>
+
+    <div class="row">
+        <!-- Bootstrap Grid column, full width -->
+        <div class="col-sm-12">
+            <!-- To Do: Include the gallery section -->
+            <div w3-include-html="vaccinationCentresGallery.html"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Grid 3rd row - Tables -->
+    <div class="row">
+        <!-- Bootstrap Grid column, full width -->
+        <div class="col-sm-12">
+            <!-- To Do: Include the tables section -->
+            <div w3-include-html="vaccinationCentresTables.html"></div>
+        </div>
+    </div>
+
+    <h2>Children aged 6 months to 11 years:</h2>
+    <ul rows="2" cols="50" name="kidsInfoList" wrap="hard">
+        <li>For children who have yet to receive any COVID-19 vaccine, parents/guardians should register their interest for their child/ward to receive the vaccination and make an appointment</li>
+        <li>From 4 January 2023, all eligible individuals, including children below the age of 12, may walk in to the VCs to receive their vaccination without a prior appointment.</li>
+        <li>On days where there is high demand for vaccination, individuals should expect a longer waiting period.</li>
+    </ul>
+
+    <h2 id="motivation">Protect those you care about.</h2>
+    <h4 id="motivation" wrap="hard">Sign up <a class="nav-link" href="VaccinationCentresForm.html">here</a> for a vaccine shot today!</h4> <!--hyperlink at here-->
+
+    <!-- Bootstrap Grid 3rd row - Footer -->
+    <div class="row">
+        <!-- Bootstrap Grid column, full width -->
+        <div class="col-sm-12">
+            <!-- To Do: Include the footer section -->
+            <div w3-include-html="footer.html"></div>
+        </div>
+    </div>
+
+    <!-- To Do: Call the includeHTML() function when loading the page -->
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

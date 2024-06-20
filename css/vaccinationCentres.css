@@ -1,0 +1,30 @@
+h1 {
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #89dee2;
+    padding-top: 1em;
+}
+
+h3 {
+    margin: auto;
+    text-align: center;
+    background-color: #89dee2;
+    padding-bottom: 1em;
+}
+
+#motivation {
+    margin: auto;
+    text-align: center;
+    color: #10217d;
+    background-color: #d7baad;
+}
+
+.row {
+    margin: auto;
+}
+
+.container-fluid {
+    margin: auto;
+}

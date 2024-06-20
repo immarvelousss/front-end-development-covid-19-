@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- To Do: Set Title -->
+    <title>Vaccination Centres in Singapore</title>
+	<meta name="author" content="Xu Jiawei" />
+    <meta name="description" content="Assignment: Slideshow" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/vaccinationCentresGallery-styles.css" />
+    <script src="js/vaccinationCentresGallery"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+		function fadeImage(I) {
+			var Image = '#' + I; //String concatenation
+			$(Image).fadeIn();
+			$(Image).fadeOut(3000, function () { fadeImage((I == 1) ? 3 : I - 1); });
+		}
+	</script>
+</head>
+<body onload="fadeImage(6);">
+
+    <div class="container-fluid">
+        <img id="1" src="images/vaccination cover.jpg" />
+        <img id="2" src="images/vaccination cover 2.jpg" />
+        <img id="3" src="images/vaccination centre 1.jpg" />
+        <img id="4" src="images/vaccination centre 2.jpg" />
+        <img id="5" src="images/vaccination centre 3.jpg" />
+        <img id="6" src="images/vaccination centre 4.jpg" />
+        
+    <!-- To Do: Call the includeHTML() function when loading the page -->
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

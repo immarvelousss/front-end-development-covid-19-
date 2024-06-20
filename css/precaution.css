@@ -1,0 +1,219 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: #527c88;
+    text-align: center;
+    padding: 30px;
+}
+.personalhygiene {
+    color: #2e4450;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.personalhygiene h2 {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 50px;
+    color: #16c2d5;
+}
+
+.personalhygiene h3 {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 25px;
+}
+
+.phbody {
+    color: #2e4450;
+    font-size: 22px;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.healthchanges {
+    color: #2e4450;
+    margin-left: 50px;
+}
+
+.healthchanges h2 {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 38px;
+    font-weight:900;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #16c2d5;
+}
+
+.hcbody{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 22px;
+    color: #2e4450;
+    
+}
+
+.hcslideshow{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: #527c88;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.mySidesImages{
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.numbertext{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+
+}
+.caption-container {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+.hcsymptoms{
+    margin-top: 50px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: red;
+    
+}
+
+.step1-img{
+    align-content: center;
+    width: 700px;
+    height: 400px;
+}
+
+.traveladvisory {
+    color: #2e4450;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.traveladvisory h2 {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 50px;
+    color: #16c2d5;
+}
+
+.traveladvisory h3{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 22px;
+}
+
+.tabody{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.countries{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+
+}
+
+.travelling{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 22px;
+}
+
+.travellingbody{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+
+}
+
+.form{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+    
+}
+
+.form legend{
+    font-size: 20px;
+}
+
+.form button{
+    font-size: 20px;
+}
+
+.output {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+}
+
+.travellingend{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+.otherprecautions {
+    color: #2e4450;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 20px;
+}
+
+.otherprecautions h2 {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 50px;
+    color: #16c2d5;
+}
+.otherprecautions u1{
+    font-size: 22px;
+}
+
+.maskstype {
+    color: #2e4450;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.maskstype h2 {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 50px;
+    color: #16c2d5;
+}
+
+.maskstype h3{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 22px;
+    
+}
+
+.maskstype table{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.maskstype table td{
+    padding: 20px;
+}
+
+.maskstypecloth{
+    color: red;
+}

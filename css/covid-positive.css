@@ -1,0 +1,346 @@
+﻿body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+
+.content-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+@media (max-width: 767px) {
+    .content-wrap {
+        width: 90%;
+        margin: 0 auto;
+   }
+}
+h1, h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    line-height: 2;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px
+}
+h2{
+    font-size: 25px;
+}
+ summary {
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 15px;
+}
+.col-sm-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/*
+    #16c2d5 blue
+    #89dee2 light blue
+    #10217d dark blue
+    #527c88 grey turquoise
+    #d7baad pink
+    #2e4450 dark turquoise
+*/
+/*intro styles*/
+.intro {
+    background: #527c88;
+    color: #F7FFF7;
+}
+
+/*immeadiate action styles*/
+.ia{
+    padding-bottom: 20px;
+}
+/*card styles*/
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 40px;
+}
+
+.iarow {
+    margin: 0 0px;
+}
+
+.iarow:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.cardlist {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/*during covid styles*/
+.durcovid {
+    background: #2e4450;
+    color: #d7baad;
+}
+
+    table {
+        float: right;
+        text-align: center;
+        border-collapse: collapse;
+        color: black;
+        margin-bottom: 0;
+    }
+
+    tr, th, td {
+        border: thin solid black;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #d7baad;
+    }
+
+    td {
+        background-color: #f2f2f2;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .table {
+            float: none;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    /*slideshow styles*/
+    .slides {
+        background-color: #527c88;
+    }
+@media only screen and (max-width: 600px) {
+    .slideshow-container img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+    .fade:not(.show) {
+        opacity: 100;
+    }
+
+    .textslides {
+        color: #f2f2f2;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        background-color: black;
+    }
+
+    .fhide {
+        display: none;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+    a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):hover {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .text {
+        background-color: #10217d;
+        color: #f2f2f2;
+        font-size: 18px;
+        padding: 4px 12px;
+        position: absolute;
+        bottom: -34px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+
+    /*protocol styles*/
+
+
+.pheader {
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    font-size: 25px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.p-item {
+    border-bottom: 3px dashed #2e4450;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+    /*form styles*/
+ .formsec {
+        background-color: #89dee2;
+    }
+
+    legend, label {
+        color: #10217d;
+        font-size: 16px;
+        width: auto;
+    }
+
+    #covidform {
+        padding: 5px 10px;
+        border: 10px solid #16c2d5;
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+    }
+label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+}
+
+label[for="condition"], select {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+    label[for="condition"] + select {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+    fieldset {
+        border-radius: 10px;
+        display: block;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: rgb(192, 192, 192);
+        border-image: initial;
+    }
+
+    option {
+        font-size: 14px;
+    }
+
+    #condition {
+        margin-left: 300px;
+        display: inline-block;
+    }
+
+    #iName, #iEmail, #age {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    .end {
+        background-color: #527c88;
+    }

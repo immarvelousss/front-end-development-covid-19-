@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <!-- Reference to Bootstrap libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Site specific Cascading Stylesheet -->
+    <link rel="stylesheet" href="css/home-styles.css">
+
+    <!--Reference to the JavaScript library for including a HTML page -->
+    <script src="https://www.w3schools.com/lib/w2.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Bootstrap Grid 1st row - Header -->
+        <div class="row">
+            <!-- Bootstrap Grid column, full width -->
+            <div class="col-sm-12">
+                <!-- To Do: Include the header section -->
+                <div w3-include-html="header.html"></div>
+            </div>
+        </div>
+
+        <!-- DESCRIPTION (JEYVIAN) -->
+        <p>
+            A virus called SARS-CoV-2, which causes COVID-19 (coronavirus disease 2019), was found to be first active in Wuhan, China, in December 2019. It has quickly spread around the globe and is very contagious.
+            Respiratory symptoms with COVID-19 are most frequently present and can resemble those of the flu, the cold, or pneumonia. Besides your lungs and respiratory system, COVID-19 may also harm other organs.
+            The illness may also affect different areas of your body.
+        </p>
+
+
+        <!-- IMAGE CAROUSEL (PHOEDORA) -->
+        <div class="containerCarousel">
+            <div class="carousel">
+                <div class="carousel__face"><img src="images/redBacteria.jpeg" /></div>
+                <div class="carousel__face"><img src="images/Quarantine.jpg" /></div>
+                <div class="carousel__face"><img src="images/safeEntry.jpg" /></div>
+                <div class="carousel__face"><img src="images/vaccine.jpg" /></div>
+                <div class="carousel__face"><img src="images/vaccinationCentre.jpeg" /></div>
+                <div class="carousel__face"><img src="images/swabbing.jpeg" /></div>
+                <div class="carousel__face"><img src="images/sanitising.jpeg" /></div>
+                <div class="carousel__face"><img src="images/healthcareStaff.jpeg" /></div>
+                <div class="carousel__face"><img src="images/hospital.jpeg" /></div>
+            </div>
+        </div>
+
+        <!-- DESCRIPTION (JEYVIAN) -->
+        <p>Find out more at the <a href="https://www.moh.gov.sg">government website</a>.</p>
+        <p>Find out more at the <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">World Health Organisation (WHO) website</a>.</p>
+        <br />
+        <br />
+
+        <!-- VIDEO (QIN KO) -->
+        <section>
+            <div class="containerVideo">
+                <h1>Watch this video to learn more about Covid-19 in Singapore!</h1>
+                <center>
+                    <video controls>
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>
+                </center>
+            </div>
+        </section>
+        <br />
+        <br />
+
+        <!-- COMAPRISON TABLE (JIAWEI) -->
+        <div class="containerTable">
+            <h1>Coronavirus Pandemics</h1>
+
+            <table id="sars">
+                <tr>
+                    <th>Severe Acute Respiratory Syndrome (SARS)</th>
+                    <td colspan="2">
+                        SARS is a viral respiratory illness caused by SARS-associate coronavirus (SARS-CoV).
+                        It was firstr report in Asia in Febuary 2023 and spread to more than 2 dozen countries
+                        in various continents before the global outbreak of 2003 was contained.
+                    </td>
+                </tr>
+                <tr>
+                    <!--MERS: https://www.cdc.gov/coronavirus/mers/about/symptoms.html -->
+                    <th>Middle East Respiratory Syndrome (MERS)</th>
+                    <td colspan="2">
+                        MERS is caused by a coronavirus called MERS-CoV. Common symptoms include fever, cough
+                        and shortness of breath, with a death rate of about 3 to 4 out of every 10 patients.
+                        MERS was first reported in Saudi Arabia in September 2012 and through retrospective
+                        investigations, the first known cases were later traced back to Jordan in April 2012.
+                        THe largest known outbreak of MERS outside of the Arabian Penisula occurred in the
+                        Republic of Korea in 2015.
+                        <br />MERS is spread through close contact and can affect anyone, with patients ranging from 1 to 99 years old.
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">COVID-19</th>
+                </tr>
+                <!--Varients and their earliest focumented samples: https://www.who.int/activities/tracking-SARS-CoV-2-variants/
+            Alpha, Beta, Delta descriptions: https://www.yalemedicine.org/news/covid-19-variants-of-concern-omicron
+            Gamma description: https://www.verywellhealth.com/gamma-covid-19-variant-5179662
+            Omicron description: https://www.unicef.org/coronavirus/what-we-know-about-omicron-variant -->
+                <tr>
+                    <th>WHO Label</th> <!--Headings-->
+                    <th>Earliest Documented Samples</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <th>Alpha</th> <!--variant 1-->
+                    <td>
+                        United Kingdom,
+                        <br />September 2020
+                    </td>
+                    <td>
+                        Alpha varient, also known as B.1.1.7, was the first of the varients and first
+                        appeared in UK, causing a surge of infections towards the end of 2020
+                        and spread to the rest of the world. The Alpha varient later faded with
+                        the rise of the Delta varient.
+                        <br />B.1.1.7 was believed to be 30% to 50% more contagious than the
+                        original COVID-19 strain. It was more likely to result in hospitalisation
+                        and deadlier than the original strain.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Beta</th> <!--variant 2-->
+                    <td>
+                        South Africa,
+                        <br />May 2020
+                    </td>
+                    <td>
+                        Beta varient, also known as B.1.351, had several mutations and has
+                        potential ro evade antibodies. It is about 50% more contagious than
+                        the original caronavirus strain. Beta may have been more likely than
+                        other varients to lead to hospitalisation and death.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gamma</th> <!--variant 3-->
+                    <td>
+                        Brazil,
+                        <br />November 2020
+                    </td>
+                    <td>
+                        Gamma varient, also known as P.1 varient was discovered in 4 travelers
+                        from Brazil when they were screened at a Japanese airport and has spread
+                        worldwide. The Gamma varient is more contagious than the original strain
+                        and is possible to cause reinfection. A study from Brazil does not suggest
+                        an increase in severity from Gamma but some monoclonal antibody treatments
+                        may be less effective against Gamma.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Delta</th> <!--variant 4-->
+                    <td>
+                        India
+                        <br />October 2020
+                    </td>
+                    <td>
+                        First identitfied in India in late 2020, later spreading to become
+                        the predominant coronavirus varient before Omicron in mid-December.
+                        Delta is estimated to have caused over twice as many infections as
+                        previous variants and between 80% to 90% more transmissable than the Alpha varient.
+                        <br />
+                        <br />Delta AY4.2, also known as Delta Plus, is the most prominent of
+                        Delta offshoots. It is estimated to be 10% to 20% more transmissable than
+                        Delta but did not appear to pose a greater chance of hospitalisation or death.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Omicron</th> <!--variant-->
+                    <td>
+                        Multiple countries,
+                        <br />late 2021
+                    </td>
+                    <td>
+                        Omicron varient spreads faster than any previous varient and the overall risk
+                        remains very high. There are various subvarients of Omicron, with the BA.5 strain
+                        being the currently dominant subvarient globally and the most contagious.
+                        On top of countries lifting public health measures, there has been a huge increase
+                        in cases and a huge surge in hospitalisation.
+                        <br />As compared to the previous Delta varient, Omicron has less risk of hospitalisation.
+                        There is an increase in COVID-19 related deaths due to Omicron in many countries with
+                        relatively lower vaccination levels.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+
+        <!-- FAQ SECTION (BERITH)-->
+        <div class="containerFAQ">
+            <h1>Frequently Asked Questions</h1>
+            <!-- FAQ 1  -->
+            <div class="container">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse1">How can I be sure that it is medically safe for me to get vaccinated?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h4>MOH has put in place multiple steps to ensure that vaccination is medically safe for you before you get vaccinated.</h4>
+                                <h3>Online Screening</h3>
+                                <p class="faq-body">
+                                    Before making appointments for vaccination, you will be prompted to complete an online screening form,
+                                    which contains medical questions.These questions screen out those who are
+                                    unsuitable for COVID-19 vaccines under the National Vaccination Programme.
+                                </p>
+                                <h3>Medical Screening at Vaccination Site</h3>
+                                <p>
+                                    There is also a round of medical screening conducted on-site on the day of vaccination.
+                                    Persons who remain unsure after clearing the online screening form,
+                                    or who choose to walk-in to a vaccination site without going through online screening will also be screened on-site.
+                                </p>
+                                <p>
+                                    You may seek clarifications or further assessment with the medical professionals
+                                    there to assist with any medical queries that you may have.
+                                </p>
+                                <p>
+                                    If you are unsure of your allergy history, the vaccination sites are able to securely access your allergy history if required.
+                                </p>
+                                <h3>Doctor's Consultation'</h3>
+                                <p>
+                                    Alternatively, you may consult your regular doctor for advice on whether you should receive the COVID-19 vaccination.
+                                </p>
+                                <p>
+                                    Please note that any charges incurred for such pre-vaccination consultation
+                                    with your doctor are not covered under the COVID-19 vaccination programme.
+                                </p>
+                                <p>
+                                    Your doctor may provide a memo on your condition which will be useful for the medical team at the
+                                    vaccination site to assess your suitability for vaccination.
+                                </p>
+                                <p>
+                                    However, the final decision as to whether you should proceed with vaccination will be made by the medical
+                                    professionals at the vaccination site.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="container">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse2">Are there any children who shouldn’t get vaccinated?</a>
+                            </h4>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        There is no category of children or teens who absolutely shouldn’t get the vaccine,
+                                        unless they have a known allergy to other vaccines or one of the vaccine’s components.
+                                    </p>
+                                    <p>
+                                        People with weakened immune systems, either from illness or medication, may still receive the vaccine
+                                        because it isn’t a live vaccine i.e. a vaccine that uses a weakened form of
+                                        a germ to prompt an immune response.
+                                    </p>
+                                    <p>
+                                        There have been reports of allergic reactions to the vaccine, but these occurrences are very rare.
+                                    </p>
+                                    <p>
+                                        Vaccine recipients are monitored for 30 minutes after receiving the injection in case of any allergic reaction.
+                                        Children and teens with other types of allergies outside of those
+                                        related to vaccines can feel safe receiving the vaccine.
+                                    </p>
+                                    <p>
+                                        Children or teens who recently received other vaccinations should
+                                        wait two weeks before getting the COVID-19 vaccine.
+                                    </p>
+                                    <p>
+                                        If you child has any medical condition that is not stable or is getting worse,
+                                        he or she should postpone the vaccination until the medical condition is better controlled.
+                                    </p>
+                                    <p>
+                                        If your child has cancer and is on active chemotherapy,
+                                        you should consult your child’s cancer specialist to discuss
+                                        if or when your child can be vaccinated.
+                                    </p>
+                                    <p>
+                                        Parents are always encouraged to speak with their teen’s or child’s
+                                        doctor/pediatrician if they have any questions or concerns.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div>
+                <div class="container">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse3">Are the vaccines safe for pregnant or breastfeeding women?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4>Pregnant or breastfeeding women can receive the COVID-19 vaccines.</h4>
+                                    <h3>
+                                        Pfizer-BioNTech/Comirnaty and Moderna/Spikevax Vaccines
+                                    </h3>
+                                    <p>
+                                        Internationally, a large number of pregnant and breastfeeding women have received a COVID-19 vaccination.
+                                        The Expert Committee on COVID-19 Vaccination (EC19V) has examined studies done to monitor women who were
+                                        vaccinated when they were pregnant, and their babies. These studies were done on women at different trimesters of
+                                        pregnancy and there is no evidence to suggest that the Pfizer-BioNTech/ Comirnaty or Moderna/Spikevax COVID-19 vaccine
+                                        may cause harm to pregnant women or their babies.
+                                    </p>
+                                    <p>
+                                        Both Pfizer-BioNTech/ Comirnaty and Moderna/Spikevax COVID-19 vaccines are mRNA vaccines.
+                                        As mRNA vaccines are not live vaccines, they are biologically unlikely to adversely affect breastfed babies.
+                                        In addition, the breast milk of vaccinated mothers may help to protect their babies from COVID-19 due to
+                                        antibodies in breast milk. There have also been no vaccine-related side effects reported in the babies
+                                        who were breastfed by mothers who received the vaccine while breastfeeding.
+                                    </p>
+                                    <h3>
+                                        Sinovac-CoronaVac and Novavax/Nuvaxovid Vaccine
+                                    </h3>
+                                    <p>
+                                        There is currently limited data in pregnant women. Nevertheless, The Sinovac-CoronaVac vaccines
+                                        is an inactivated vaccine, while Novavax/Nuvaxovid is a protein subunit vaccine.
+                                        These vaccines are routinely used in many other vaccines with a documented good safety profile,
+                                        including in pregnant women.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div>
+                <div class="container">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse4">Can the vaccines protect me against all strains of COVID-19?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        Current evidence suggests that the current COVID-19 vaccines continue to offer good protection
+                                        against the various COVID-19 variants. Bivalent vaccines can offer better protection against
+                                        Omicron and other COVID-19 variants than monovalent/prototype vaccines, and you are recommended
+                                        to receive the bivalent vaccines when it is made available to you.
+                                    </p>
+                                    <p>
+                                        MOH will continue to monitor the evolving situation and global studies of
+                                        vaccine efficacy against the various COVID-19 variants.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div>
+                <div class="container">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse5">What should I take note of on vaccination day?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <li>
+                                        Bring your ID (NRIC/FIN/Student Pass) for all appointments.
+                                    </li>
+                                    <li>
+                                        Please turn up on time.
+                                    </li>
+                                    <li>
+                                        Please wear short sleeved attire, or sleeves loose enough to be rolled up.
+                                    </li>
+                                    <li>
+                                        If you are unwell, or had fever in the past 24 hours, stay home and postpone your appointment.
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br />
+
+        <!-- Bootstrap Grid 3rd row - Footer -->
+        <div class="row">
+            <!-- Bootstrap Grid column, full width -->
+            <div class="col-sm-12">
+                <!-- To Do: Include the footer section -->
+                <div w3-include-html="footer.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- To Do: Call the includeHTML() function when loading the page -->     
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

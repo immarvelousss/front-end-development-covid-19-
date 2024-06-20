@@ -1,0 +1,42 @@
+body {
+    background-color: #89dee2;
+}
+
+form {
+    margin: auto;
+    padding: 5px 10px;
+    border: 10px solid #2e4450;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #527c88;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    background-color: #527c88;
+    color: #d7baad;
+    font-family: cursive;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+    color: #d7baad;
+}
+
+label, select {
+    width: 140px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+fieldset {
+    border-radius: 10px;
+    color: #d7baad;
+}
+
+input {
+    vertical-align: top;
+}

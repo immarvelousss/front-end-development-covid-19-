@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Types of COVID-19 vaccinations</title>
+    <meta name="author" content="Ang Jeyvian" />
+    <meta name="description" content="FED Assignment" />
+    <link rel="stylesheet" href="css/vaccinationIndex-styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <script src="js/vaccination.js"></script>
+    <!-- Reference to Bootstrap libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- To Do: Reference to the JavaScript library for including a HTML page -->
+    <script src="https://www.w3schools.com/lib/w2.js"></script>
+</head>
+<body class="container-fluid">
+    <div class="container-fluid">
+        <!-- Bootstrap Grid 1st row - Header -->
+        <div class="row">
+            <!-- Bootstrap Grid column, full width -->
+            <div class="col-sm-12">
+                <!-- To Do: Include the header section -->
+                <div w3-include-html="header.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" style="font-family: 'Quicksand', sans-serif; color: #527c88;">
+        <h1 style="font-family: 'Red Hat Display', sans-serif; color: #2e4450;">Types of COVID-19 Vaccines</h1>
+        <p>Click any button below to get started!</p>
+        <hr />
+        <br />
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/pfizer.jpg" style="width:1000px; height: 700px;" />
+                <div class="text">Pfizer-BioNTech Vaccine</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/moderna.jpg" style="width: 1000px; height: 700px; " />
+                <div class="text">Moderna/Spikevax Vaccine</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/novavax.jpg" style="width: 1000px; height: 700px; " />
+                <div class="text">Novavax/Nuvaxovid Vaccine</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/sinovac.jpg" style="width: 1000px; height: 700px; " />
+                <div class="text">Sinovac-CoronaVac Vaccine</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div style="text-align:center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <br />
+        <hr />
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="images/pfizer.jpg" alt="Pfizer Vaccine" width="300" height="210" style="margin: auto;"/>
+                    <br />
+                    <h3 style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;"><b>Pfizer-BioNTech</b></h3>
+                    <br />
+                    <br />
+                    <p>an mRNA-based COVID-19 vaccine developed by the German biotechnology company BioNTech</p>
+                    <br />
+                    <br />
+                    <a href="vaccinationPfizer.html" style="color: #d7baad;">Find out more</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="images/moderna.jpg" alt="Moderna Vaccine" width="300" height="210" style="margin: auto;"/>
+                    <br />
+                    <h3 style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;"><b>Moderna</b></h3>
+                    <p>
+                        a COVID-19 vaccine developed by American company Moderna, the United States National Institute of Allergy and Infectious Diseases (NIAID) and the Biomedical
+                        Advanced Research and Development Authority (BARDA)
+                    </p>
+                    <a href="vaccinationModerna.html" style="color: #d7baad;">Find out more</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="images/novavax.jpg" alt="Novavax Vaccine" width="300" height="210" style="margin: auto;"/>
+                    <br />
+                    <h3 style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;"><b>Novavax</b></h3>
+                    <br />
+                    <br />
+                    <p>a subunit COVID-19 vaccine developed by Novavax and the Coalition for Epidemic Preparedness Innovations (CEPI)</p>
+                    <br />
+                    <br />
+                    <a href="vaccinationNovavax.html" style="color: #d7baad;">Find out more</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="images/sinovac.jpg" alt="Sinovac Vaccine" width="300" height="210" style="margin: auto;"/>
+                    <br />
+                    <h3 style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;"><b>Sinovac-CoronaVac</b></h3>
+                    <br />
+                    <br />
+                    <p>a whole inactivated virus COVID-19 vaccine developed by the Chinese company Sinovac Biotech</p>
+                    <br />
+                    <br />
+                    <a href="vaccinationSinovac.html" style="color: #d7baad;">Find out more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="section" style="font-family: 'Quicksand', sans-serif; color: #527c88;">
+        <h1 style="font-family: 'Red Hat Display', sans-serif;">Summary of COVID-19 Vaccines Available in Singapore</h1>
+        <hr />
+        <h3><em>For easy referencing</em></h3>
+        <table>
+            <tr style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;">
+                <th width="11%"></th>
+                <th width="20%">Age Group</th>
+                <th width="25%">What is it?</th>
+                <th width="22%">Benefits</th>
+                <th width="22%">Booster Jab</th>
+            </tr>
+            <tr>
+                <th style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;">Pfizer-BioNTech/Comirnaty</th>
+                <td>> 6 months old</td>
+                <td rowspan="2">Messenger RNA (mRNA) which helps the immune system to produce protection.</td>
+                <td rowspan="2">Good protection against the current virus variations and lowers the risk of infection and serious sickness from COVID-19.</td>
+                <td>
+                    <ul>
+                        <li><b>Timeframe: </b>5 months after last vaccine</li>
+                        <li><b>Age Group: </b>> 5 years</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;">Moderna/Spikevax</th>
+                <td>6 months - 4 years <em>OR</em> > 18 years</td>
+                <td>
+                    <ul>
+                        <li><b>Timeframe: </b>5 months after the last vaccine</li>
+                        <li><b>Age Group: </b>> 18 years</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;">Novavax/Nuvaxovid</th>
+                <td rowspan="2">> 18 years</td>
+                <td>
+                    purified copies of a protein found on the COVID-19 virus (SARS-CoV-2 recombinant spike protein) which is used to stimulate the body to develop protection
+                    against the actual COVID-19 virus.
+                </td>
+                <td>Reduces the risks of infection and severe disease from COVID-19.</td>
+                <td>
+                    <p><em>Acceptable alternative to mRNA vaccines for use as a booster dose.</em></p>
+                    <ul>
+                        <li><b>Timeframe: </b>5 months after the last vaccine</li>
+                        <li><b>Age Group: </b>> 18 years</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;">Sinovac-CoronaVac</th>
+                <td>
+                    <em>Taken only if unable to complete vaccination with mRNA vaccines and Novavax/Nuvaxovid due to an allergic reaction.</em>
+                    <br />
+                    <br />
+                    Inactivated COVID-19 virus which stimulates the body to produce protection against the actual COVID-19 virus.
+                </td>
+                <td>Protection against severe and fatal COVID-19 may be high, but protection against virus variants suck as Omicron may be lower.</td>
+                <td>
+                    <ul>
+                        <li><b>Timeframe: </b>3 months after lasat Sinovac-CoronaVac</li>
+                        <li><b>Age Group: </b>> 18 years</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <a href="vaccinationForm.html" style="color: #d7baad;">Not sure which vaccine to take? Take this test here!</a>
+    </div>
+    <br />
+    <div class="section" style="font-family: 'Quicksand', sans-serif; color: #527c88;">
+        <h1 style="font-family: 'Red Hat Display', sans-serif;">Having Minimum Protection against COVID-19</h1>
+        <hr />
+        <p style="color: #2e4450;">For minimum protection, persons aged 5 years and above should complete, as applicable, </p>
+        <ul>
+            <li>3 doses of Pfizer-BioNTech/Comirnaty, Moderna/Spikevax or Novavax/Nuvaxovid; or,</li>
+            <li>4 doses of Sinovac-CoronaVac</li>
+        </ul>
+        <p>These would be doses that were previuosly referred to as the primary vaccination series and the first booster.</p>
+    </div>
+    <br />
+    <div class="section" style="font-family: 'Quicksand', sans-serif; color: #527c88;">
+        <h1 style="font-family: 'Red Hat Display', sans-serif;">Keeping Up-to-Date</h1>
+        <hr />
+        <p style="color: #2e4450;">
+            Individuals should take an additional booster dose of the COVID-19 vaccine between five months and one year from their last vaccine dose in
+            order to maintain their level of protection:
+        </p>
+        <p>Persons who are</p>
+        <ul>
+            <li>aged 12 years and above</li>
+            <li>living in aged care facilities</li>
+            <li>medically vulnerable and at higher risk of severe disease</li>
+        </ul>
+    </div>
+    <br />
+    <div class="section" style="font-family: 'Quicksand', sans-serif; color: #527c88;">
+        <h1 style="font-family: 'Red Hat Display', sans-serif;">Side Effects of Vaccinations</h1>
+        <hr />
+        <br />
+        <table>
+            <tr style="font-family: 'Hind Guntur', sans-serif; color: #2e4450;">
+                <th width="30%">Side Effects</th>
+                <th width="70%">How to Manage</th>
+            </tr>
+            <tr>
+                <td>Pain, redness, swelling at the injection site</td>
+                <td rowspan="3">
+                    Those with fever are advised to self-isolate at home until the fever subsides.<br /><br />Paracetamol 1 to 2 tablets for the
+                    other side effects every 6 hours for adults or dosed accordingly to the child's weight as needed.
+                </td>
+            </tr>
+            <tr>
+                <td>Fever, chills</td>
+            </tr>
+            <tr>
+                <td>Headache, muscle pain, joint pain</td>
+            </tr>
+            <tr>
+                <td>Tiredness</td>
+                <td>Rest</td>
+            </tr>
+            <tr>
+                <td>Lymph node swelling at neck or arms</td>
+                <td>Usually gets better by itself in a week or so</td>
+            </tr>
+        </table>
+        <p>See a doctor if:</p>
+        <ul>
+            <li>The side effects persist or get worse</li>
+            <li>The fever persists for more than 48 hours (2 days)</li>
+            <li>Respiratory symptoms such as cough, runny nose, sore throat, shortness of breath or loss of sense of taste and smell develop</li>
+            <li>Heart or chest symptoms such as chest pain, shortness of breath or abnormal heart beats develop</li>
+        </ul>
+        <p>
+            In very rare cases, vaccines can cause a severe allergic reaction. Signs of a severe allergic reaction include difficulty breathing, swelling of your face,
+            throat, eyes or lips, a fast heartbeat, dizziness and weakness, a bad rash all over your body. If you experience a severe allergic reaction, seek medical attention
+            immediately. Call 995 or go to the nearest A&E immediately.
+        </p>
+    </div>
+    <br />
+    <br />
+    <!-- Bootstrap Grid 3rd row - Footer -->
+    <div class="row">
+        <!-- Bootstrap Grid column, full width -->
+        <div class="col-sm-12">
+            <!-- To Do: Include the footer section -->
+            <div w3-include-html="footer.html"></div>
+        </div>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

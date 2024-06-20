@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Vaccination Signup Form</title>
+    <meta name="author" content="Xu Jiawei" />
+    <meta name="description" content="Vaccination Signup Form" />
+    <link rel="stylesheet" href="css/vaccinationCentresForm.css" />
+    <script src="js/vaccinationCentresForm.js" defer></script>
+</head>
+<body onsubmit="SendOutput()">
+    <form action="" method="get">
+        <h1>Signup for Your Vaccine Shot Today!</h1>
+        <p></p>
+        <fieldset id="personalDetails">
+            <legend>Personal Details</legend>
+            <label for="age group">Age Group:</label>
+            <select required>
+                <option value="Please select...">Please Select...</option>
+                <option value="Toddler">6 months to 4 years old</option>
+                <option value="Children">5 years to 11 years old</option>
+                <option value="Teenager">12 years to 17 years</option>
+                <option value="Adult">18 years and above</option>
+            </select>
+            <p>
+                <label for="name" class="labelAlign">Name:</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required />
+            </p>
+            <p>
+                <label for="email" class="labelAlign">Email:</label>
+                <input type="email" name="Email" size="50" placeholder="Enter your email address" required />
+            </p>
+            <p>
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="Phone" size="8" pattern="[689]\d{7}" required />
+            </p>
+            <p>
+                <label for="special" class="labelAlign">Any illness/special conditions:</label>
+                <input id="special" name="special" type="text" placeholder="E.g. Diabetes, cancer, etc." />
+            </p>
+        </fieldset>
+        <fieldset id="vaccineInfo">
+            <legend>Vaccination Details</legend>
+            <label for="type" class="labelAlign">Vaccine Type:</label>
+            <input type="radio" name="type" id="type" value="pfizer" checked required> Pfizer
+            <input type="radio" name="type" id="stype" value="moderna"> Moderna
+            <p>
+                <label for="centre">Vaccination Centre:</label>
+                <select required>
+                    <option value="Please select...">Please Select...</option>
+                    <option value="centralCentre">Queenstown Community Centre</option>
+                    <option value="eastCentre">Our Tampines Hub</option>
+                    <option value="northCentre">Sembawang Community Club</option>
+                    <option value="neCentre">One Punggol</option>
+                    <option value="westCentre">Tama Jurong Community Centre</option>
+                </select>
+            </p>
+            <p>
+                <label for="iDate">Date:</label>
+                <input type="date" id="iDate" name="Date" required />
+                <label for="iTime">Time:</label>
+                <input type="time" id="iTime" name="Time" value="10:00" min="10:00" max="22:00" step="900" required />
+            </p>
+        </fieldset>
+        <p id="message">Make your booking now!</p>
+        <br />
+        <input type="submit" />
+        <input type="reset" onclick="resetForm()" />
+
+        <button onclick="vaccinationCentres.back()">Back</button>
+
+        <br />
+    </form>
+</body>
+</html>
